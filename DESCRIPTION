@@ -1,9 +1,10 @@
 Package: maxspeed
-Title: What the Package Does (One Line, Title Case)
+Title: The Relationship between an Animal's Body Size and Speed
 Version: 0.0.0.9000
 Authors@R:
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+    person("Gwanggyu", "Sun", , "ggsun@stanford.edu", role = c("aut", "cre"))
+Description: This package aims to reproduce the scatter plot between an animal's
+    body size and speed, as presented in Figure 2A from Hirt et al. (2017).
 License: MIT + file LICENSE
 ByteCompile: true
 Encoding: UTF-8
@@ -16,5 +17,6 @@ Imports:
     ggplot2,
     here,
     readxl
-Suggests: devtools,
+Suggests:
+    devtools,
     git2r

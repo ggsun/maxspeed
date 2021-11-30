@@ -1,17 +1,12 @@
 ---
-title: "Title Goes Here"
+title: "The Relationship between an Animal's Body Size and Speed"
 author:
-  - Myfirstname Mylastname:
-      email: fl@oneplace.edu
-      institute: [UofO]
+  - Gwanggyu Sun:
+      email: ggsun@stanford.edu
+      institute: [SU]
       correspondence: true
-  - Yourfirstname Yourlastname:
-      email: fl@another.edu
-      institute: [UofA]
-      correspondence: false
 institute:
-  - UofO: University of One Place
-  - UofA: University of Another Place
+  - SU: Stanford University
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: 
     bookdown::word_document2:
@@ -57,7 +52,7 @@ knitr::opts_chunk$set(
 
 # Introduction
 
-This is a replication of figure 2A from [@hirt2017]
+This is a replication of figure 2A from Hirt et al., 2017 [@hirt2017]. (Fig. \@ref(fig:fig2a))
 
 # Background
 
@@ -72,7 +67,7 @@ library(ggplot2)
 maxspeed <- readRDS("../data/derived_data/maxspeed.RDS")
 ```
 
-```{r fig2a}
+```{r fig2a, fig.cap="Replication of figure 2a from [@hirt2017]"}
 palette <- list(green = "#83CE3D",
                 orange = "#E39F2F",
                 blue = "#5F9FA1")
